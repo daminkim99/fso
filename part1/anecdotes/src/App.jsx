@@ -22,13 +22,11 @@ const App = () => {
   const vote = () => {
     const copy = [...votes]
     copy[selected] +=1
-    console.log(copy)
     setVotes(copy)
   }
 
-  
-    const maxValue = Math.max(...votes)
-    const maxIndex = votes.indexOf(maxValue)
+  const maxValue = Math.max(...votes)
+  const maxIndex = votes.indexOf(maxValue)
   
   return (
     <>
